@@ -1,6 +1,6 @@
 FROM ubuntu:24.04
 
-RUN apt-get update -y && apt-get install -y curl
+RUN apt update -y && apt install -y curl
 WORKDIR /usr/src/app
 COPY script.sh .
-ENTRYPOINT ["./script.sh"]
+CMD ["./script.sh"]
